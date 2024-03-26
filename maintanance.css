@@ -1,19 +1,37 @@
+@font-face {
+  font-family: NeueCrocoSansRegular;
+  src: url(./assets/fonts/NeueCrocoSansRegular.woff2?v=4) format('woff2'), url('./assets/fonts/NeueCrocoSansRegular.woff?v=4') format('woff'), url('./assets/fonts/NeueCrocoSansRegular.ttf?v=4') format('truetype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background-color: #00141e;
   padding: 0;
   margin: 0;
   font-size: 16px; 
+  color:white;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
-
+* {
+  font-family: NeueCrocoSansRegular;
+}
 .container {
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding-top: 120px;
 }
 
 .image-stack { 
@@ -33,26 +51,46 @@ body {
 }
 
 .computer-frame {
-  top: 7.5rem; 
+  /* top: 7.5rem;  */
 }
 
 .croco-logo {
-  top: calc(7.5rem + 10vh ); 
+  /* top: calc(7.5rem + 10vh );  */
+}
+
+.content {
+  /* top: calc(7.5rem + 15vh);  */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  grid-row-gap: 15px;
+}
+.content__item {
+  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .title {
-  top: calc(7.5rem + 15vh); 
+  display: inline-block;
+
+}
+
+img {
+  margin-right: 5px; 
 }
 
 .contact {
-  position: relative;
+  position: fixed;
   width: 100%; 
-  height: 100vh; 
   display: flex;
   justify-content: flex-end; 
   align-items: flex-end; 
-  margin-right: 4rem;
-  margin-bottom: 2rem
+  right: 4rem;
+  bottom: 2rem
 }
 
 .icons {
@@ -79,3 +117,12 @@ body {
   opacity: 0.7; 
 }
 
+.image-stack__item.logo {
+margin-bottom: 50px;
+}
+.image-stack__item.frame {
+  margin-bottom: 80px;
+}
+.lc-frame-launcher {
+  display: none;
+}

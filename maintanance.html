@@ -4,34 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./maintanance.css">
-    <title>Maintenance</title>
+    <title>Maintanance</title>
 </head>
 <body>
 
     <div class="container">
         <div class="image-stack">
-          <div>
+          <div class="image-stack__item frame">
               <img class="computer-frame" id="computer-frame" alt="">
           </div>
-          <div>
+          <div class="image-stack__item logo">
               <img class="croco-logo" id="croco-logo">
           </div>
-          <div>
-              <img class="title" id="title">
+          <div class="content">
+                <div class="content__item" >
+                    <img id="geo-logo" alt="">
+                    <img id="line-geo" alt="">
+                    <p class="title" id="title-ka"></p>
+                </div>
+                <div class="content__item">
+                    <img id="en-logo" alt="">
+                    <img id="line-en" alt="">
+                    <p class="title" id="title-en"></p>
+                </div>
           </div>
        
         </div>
         <div class="contact">
             <div class="icons">
-                <img class="phone" id="phone" alt="Phone">
-                <img class="chat" id="chat" alt="Chat">
+                <img onclick="handlePhoneClick()" class="phone" id="phone" alt="Phone">
+                <img onclick="toggleChat()" class="chat" id="chat" alt="Chat">
             </div>
         </div>
-
+    </div>
       
-      </div>
-   
-
     <script src="/maintanance.js"></script>
 </body>
 </html>

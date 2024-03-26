@@ -4,6 +4,11 @@
       "crocoLogo": "./svgs/croco-logo.svg",
       "title": "./svgs/title.svg",
       "phone": "./svgs/phone.svg",
-      "chat": "./svgs/chat.svg"
+      "chat": "./svgs/chat.svg",
+      "titleKa": "ვებ-გვერდი დროებით მიუწვდომელია, მალე დავბრუნდებით!",
+      "titleEn": "The website Is Temporarily unavailable, we will be back soon!",
+      "geoLogo": "./svgs/geo-logo.svg",
+      "enLogo": "./svgs/en-logo.svg",
+      "line": "./svgs/line.svg"
     }
   }
