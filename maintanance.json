@@ -1,0 +1,9 @@
+{
+    "svgs": {
+      "computerFrame": "./svgs/computer-frame.svg",
+      "crocoLogo": "./svgs/croco-logo.svg",
+      "title": "./svgs/title.svg",
+      "phone": "./svgs/phone.svg",
+      "chat": "./svgs/chat.svg"
+    }
+  }
